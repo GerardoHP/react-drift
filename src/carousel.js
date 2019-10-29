@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import styles from './carousel-styles';
 
 function renderSlides(props) {
   return React.Children.map(props.children, (slide, i) => {
@@ -15,7 +16,7 @@ function renderSlides(props) {
 
 function Carousel(props) {
   return (
-    <div>
+    <div style={styles.root}>
       {renderSlides(props)}
       {props.nav}
     </div>

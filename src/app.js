@@ -4,6 +4,8 @@ import Carousel from './carousel.js'
 import Frame from './frame.js'
 import Nav from './nav.js'
 import Slide from './slide.js'
+import congifStyles from "./config-styles";
+import configStyles from './config-styles'
 
 export default class DriftApp extends React.Component {
   constructor(props) {
@@ -41,7 +43,7 @@ export default class DriftApp extends React.Component {
         <Carousel
           showIndex={this.state.showIndex}
           nav={this.renderNav()}
-          width={640}
+          width={configStyles.imageWidth}
         >
           <Slide image={require('./images/1.jpg')} title="Imperial Mockery">
             In a show of defiance, rebels have again made mockery of the majesty
